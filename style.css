@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -14,39 +13,46 @@ ul {
     list-style: none;
 }
 
-.cabeçalho{
-    background: #00A9FF;
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #a3bded 16.62%, #6f86d6 85.61%);
 }
-
-.cabeçalho-texto {
-    margin: auto;
-    padding: 20px 150px;
+    
+.cabeçalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    color: #ffffff;
+    color: white;
+    padding: 10px 10px;
+    margin: auto;
 }
 
-.logo {
+.cabeçalho-titulo {
     font-family: Teko;
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .menu {
-    font-family: Inter;
     display: flex;
     flex-direction: row;
-    gap: 24px;
-    font-weight: 600;
+    gap: 40px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
-button {
+.item-1 {
+    font-weight: 700;
+}
+
+.botao-cabeçalho{
     font-family: Inter;
     padding: 12.5px 30px;
     border: 0;
+    cursor: pointer;
     border-radius: 100px;
     background-color: #65B741;
     color: #ffffff;
@@ -55,84 +61,20 @@ button {
     -webkit-transition: all 0.5s;
 }
 
-button:hover {
+.botao-cabeçalho:hover{
     background-color: #6ECB63;
     box-shadow: 0 0 20px #ffffff;
     transform: scale(1.1);
 }
 
-button:active {
+.botao-cabeçalho:active {
     background-color: #2bb33d;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
     box-shadow: none;
     transform: scale(0.98);
-  }
-
-main {
-    display: flex;
-    flex-direction: column;
 }
 
-body {
-    background-image: linear-gradient(to top, #e6e9f0 100%, #eef1f5 100%);
+.conteúdo {
+    border-top: 0.5px solid #ffffff;
 }
-
-.hero {
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6rem;
-    padding: 40px 60px;
-    margin: auto ;
-    overflow: clip;
-    align-items: center;
-}
-
-.hero-conteúdo {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #00A9FF;
-    border-radius: 24px;
-    padding: 20px;
-}
-
-.destaque {
-    color: #ffffff;
-    font-family: Epilogue;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-h1 {
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 56px;
-    font-weight: 800;
-}
-
-hr {
-    border-color: #ffffff;
-}
-
-.hero-subtitulo {
-    color: #ffffff;
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.hero-imagem {
-    max-width: 40%;
-    margin: -1rem;
-
-}
-
-.hero-imagem > figure > img {
-    border-radius: 8px;
-    width: 100%;
-}
-
