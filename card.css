@@ -1,0 +1,103 @@
+.receitas {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-cabeçalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.destaque {
+    color: blue;
+    text-transform: uppercase;
+}
+
+.receitas-titulo{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    color: brown;
+}
+.subtitulo {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.receitas-card-conteiner{
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.receitas-card {
+    background: blue;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+}
+
+.receitas-card-cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas-card-cabeçalho-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.destaque_amarelo{
+    color: yellow;
+}
+
+.receita-titulo {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.avaliaçao{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.receita-descriçao {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.receitaautor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.receitaautor > img{
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.autor {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
