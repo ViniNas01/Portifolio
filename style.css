@@ -15,16 +15,17 @@ ul {
 
 body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #a3bded 16.62%, #6f86d6 85.61%);
+    background: #7BC9FF;
+
 }
-    
+
 .cabeçalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 10px 10px;
+    padding: 20px 100px;
     margin: auto;
 }
 
@@ -38,6 +39,7 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
     font-family: Inter, sans-serif;
     font-weight: 500;
@@ -48,7 +50,7 @@ body {
     font-weight: 700;
 }
 
-.botao-cabeçalho{
+.botao-cabeçalho {
     font-family: Inter;
     padding: 12.5px 30px;
     border: 0;
@@ -61,7 +63,7 @@ body {
     -webkit-transition: all 0.5s;
 }
 
-.botao-cabeçalho:hover{
+.botao-cabeçalho:hover {
     background-color: #6ECB63;
     box-shadow: 0 0 20px #ffffff;
     transform: scale(1.1);
@@ -77,4 +79,64 @@ body {
 
 .conteúdo {
     border-top: 0.5px solid #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteúdo-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    max-width: 850px;
+}
+
+.principal-titulo {
+    font-family: Inter;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.principal-subtitulo {
+    font-family: Epilogue;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.botao-principal {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #2bb33d;
+
+}
+
+button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #65B741;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+img {
+    height: 600px;
+    width: 720px;
 }
